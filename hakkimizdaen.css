@@ -1,0 +1,143 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.about-header {
+    
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    
+   
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+    color: #275462;
+}
+
+/* About Section */
+.about-about, .about-vision-mission {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    color: #0d3245;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-about p, .about-vision-mission p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Görseller */
+.about-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.about-images img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Vision-Mission Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-content h3 {
+    color: #0d3245;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.about-footer {
+    background-color: #0d3245;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-images img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-images img {
+        width: 90%; /* Görseller tek sütun olacak */
+    }
+
+    .about-content {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-about p, .about-vision-mission p {
+        font-size: 0.9rem;
+    }
+
+    .about-images img {
+        width: 100%; /* Görseller tam genişlik olacak */
+    }
+}

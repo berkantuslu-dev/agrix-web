@@ -1,0 +1,125 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url(./pics/10.jpg);
+	 background-size: cover;
+    color: #333;
+}
+
+/* Hizmetlerimiz Başlıkları */
+.hizmetlerimiz-section {
+    padding: 60px 0;
+}
+
+.hizmetlerimiz-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hizmetlerimiz-section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.hizmetlerimiz-description {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Hizmet Kutucukları */
+.hizmetlerimiz-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.hizmetlerimiz-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #275462;
+    text-align: center;
+}
+
+.hizmetlerimiz-preview {
+    font-size: 1rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.hizmetlerimiz-detail {
+    display: none;
+}
+
+.hizmetlerimiz-detail-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hizmet Kutucuğuna Tıklama Etkileşimi */
+.hizmetlerimiz-box.active .hizmetlerimiz-detail {
+    display: block;
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    .hizmetlerimiz-container {
+        width: 95%;
+    }
+body {
+    
+    background-image: url(./pics/4.jpg);
+	 background-size: cover;
+
+}
+    .hizmetlerimiz-section-title {
+        font-size: 2rem;
+    }
+
+    .hizmetlerimiz-description {
+        font-size: 0.9rem;
+    }
+
+    .hizmetlerimiz-title {
+        font-size: 1.5rem;
+    }
+
+    .hizmetlerimiz-preview {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hizmetlerimiz-section-title {
+        font-size: 1.5rem;
+    }
+body {
+    
+    background-image: url(./pics/4.jpg);
+	 background-size: cover;
+
+}
+    .hizmetlerimiz-title {
+        font-size: 1.3rem;
+    }
+
+    .hizmetlerimiz-preview {
+        font-size: 0.8rem;
+    }
+}

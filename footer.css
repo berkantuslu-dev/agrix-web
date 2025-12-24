@@ -1,0 +1,117 @@
+/* Footer Genel Stilleri */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer {
+    background-color: #bdc3c7;
+}
+
+/* İlk bölüm (4 bölüm) */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ekran daraldığında sütunlar sarılır */
+    padding: 1rem 5%;
+    gap: 1rem; /* Aradaki boşluk */
+}
+
+.footer-section {
+    width: 23%; /* 4 bölüm için her birinin genişliği */
+    min-width: 200px; /* Çok dar ekranlarda bölümlerin birbirine yaklaşmasını önler */
+}
+
+.footer-logo {
+    max-width: 100%; /* Logo, mevcut genişliğe uyacak şekilde */
+    height: auto;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section a {
+    font-size: 1rem;
+    color: #007BFF;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer alt kısmı */
+.footer-bottom {
+    text-align: center;
+    background-color: #0d3245;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2%;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.9rem;
+    }
+
+    .footer-section a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 0.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.85rem;
+    }
+
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+    }
+}
