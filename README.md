@@ -61,3 +61,5 @@ Personal / Independent Project
 - Email notifications for new orders
 - Additional language support
 - Performance and security enhancements
+
+⚠️ Note: Production credentials, real user data, and uploads are intentionally excluded from this repository for security reasons.
